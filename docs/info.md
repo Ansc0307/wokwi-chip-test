@@ -1,5 +1,19 @@
 ## How it works
-This design implements a simple logic circuit using basic gates. The outputs change depending on the input combinations.
+
+This design implements AND, NAND, and OR logic gates using inputs a and b.  
+The outputs correspond to each logic operation.
+
+Additionally, flip-flops are used to divide the clock signal, generating slower output signals.
 
 ## How to test
-Provide input signals using the input pins. Observe the outputs and verify they match the expected logic behavior.
+
+Set the inputs and verify the outputs match the expected logic:
+
+| a | b | AND | NAND | OR |
+|---|---|-----|------|----|
+| 0 | 0 |  0  |  1   |  0 |
+| 0 | 1 |  0  |  1   |  1 |
+| 1 | 0 |  0  |  1   |  1 |
+| 1 | 1 |  1  |  0   |  1 |
+
+Apply a clock signal (e.g., 10 kHz) and observe the divided outputs changing at slower rates.
